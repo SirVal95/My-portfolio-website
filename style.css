@@ -422,7 +422,7 @@ span {
 }
 
 .footer button {
-    padding: 10px 15px;
+    padding: 8px 12px;
     border: 2px solid #ffffff;
     border-radius: 20px;
     background: transparent;
@@ -430,7 +430,7 @@ span {
 }
 
 .footer button:hover {
-    padding: 10px 25px;
+    padding: 8px 15px;
 }
 
 .footer button a {
@@ -445,7 +445,7 @@ span {
 }
 
 .social-icons{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .footer .social-icons a {
@@ -456,13 +456,13 @@ span {
 .footer .social-icons .fa-brands{
     border: 1.5px solid #ffffff96;
     border-radius: 50%;
-    padding: 8px;
-    font-size: 18px;
+    padding: 5px;
+    font-size: 15px;
     transition: 0.3s ease-in-out;
 }
 
 .footer .social-icons .fa-brands:hover {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .footer p {
