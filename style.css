@@ -5,28 +5,109 @@
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navbar-holder {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(9, 9, 17, 0.918);
-    padding: 50px 30px;
+.nav {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    background: #9e7645a6;;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label #btn {
+    top: 60px;
+    /* margin-left: 40px; */
+    font-size: 25px;
+    padding: 5px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999999;
+    float: right;
+    transition: all 0.5s ease;
+}
+
+label #cancel {
+    top: 40px;
+    margin-left: -163px;
+    font-size: 25px;
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 99999999999;
+    transition: all 0.4s ease;
+}
+
+#check:checked ~ .menu{
+    margin-left: 0;
+}
+
+#check:checked ~ label #btn {
+    /* margin-left: 80px; */
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    margin-left: 163px;
+}
+
+header {
+    padding: 40px 40px;
+    background: #e4932fa6;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99999999;
+    height: 100vh;
+    width: 200px;
+    background: #e4932fec;
+    margin-left: -300px;
+    transition: 0.5s;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid black;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    padding-left: 50px;
+}
+
 .logo a img {
     width: auto;
-    height: 100px;
-    animation: movedown 1s 1 1s  linear forwards;
-    visibility: hidden;
-}
+    height: 50px;
+    position: fixed;
+    z-index: 999999999;
+    
+    /* animation: movedown 1s 1 1s  linear forwards;
+    visibility: hidden; */
+} 
 
 @keyframes movedown {
     0% {
@@ -40,38 +121,14 @@ body {
 
 }
 
-.menu{
-    animation: movedown 1s 1 1.5s  linear forwards;
-    visibility: hidden;
-}
-
-
-.menu a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 0 15px;
-    margin-left: 5px;
-    transition: 0.25s ease-out;
-}
-
-.menu a:hover {
-    color: #e4932fec;
-}
-
 .fa-solid,
 .fa-brands {
     margin-right: 8px;
-}
+} 
 
 .hero-1 {
     background: url(./assets/images/condensation-water-drops-black-window-background-rain-droplets-with-light-reflection-dark-glass-surface-realistic-3d-vector-illustration_107791-4197.webp);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    position: relative;
     height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
@@ -107,7 +164,8 @@ body {
 .my-image img {
    border-radius: 50%;
    width: auto;
-   height: 500px;
+   height: 400px;
+   margin-top: 70px;
    animation: zoomin 1s 1 1.5s  linear forwards;
    visibility: hidden;
 }
@@ -472,15 +530,36 @@ span {
 
 
 @media screen and (max-width:900px) {
+    label #btn {
+        top: 50px;
+    }
+
     .hero-1 {
         height: 70vh;
         /* position: relative; */
     }
     .hero-1 .content {
-        /* margin-top: -200px; */
+        /* margin-top: 50px; */
     }
+
+    .hero-1 p {
+        line-height: 25px;
+    }
+
+    .hero-1 button {
+        padding: 12px;
+    }
+
+    .hero-1 a {
+        font-size: 15px;
+    }
+
     .my-image {
         display: none;
+    }
+
+    .logo a img {
+        height: 30px;
     }
 
     .my-image img{
