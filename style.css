@@ -14,6 +14,8 @@ body {
 .nav {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 #check {
@@ -29,30 +31,31 @@ label #btn, label #cancel {
 }
 
 label #btn {
-    top: 60px;
-    /* margin-left: 40px; */
+    top: 20px;
+    right: 50px;
     font-size: 25px;
     padding: 5px 10px;
     max-width: 1200px;
     margin: 0 auto;
     position: fixed;
     z-index: 9999999;
-    float: right;
     transition: all 0.5s ease;
 }
 
 label #cancel {
     top: 40px;
-    margin-left: -163px;
+    right: 50px;
     font-size: 25px;
     padding: 5px 10px;
+    display: none;
     position: fixed;
     z-index: 99999999999;
     transition: all 0.4s ease;
 }
 
 #check:checked ~ .menu{
-    margin-left: 0;
+    display: flex;
+    right: 0px;
 }
 
 #check:checked ~ label #btn {
@@ -62,7 +65,8 @@ label #cancel {
 }
 
 #check:checked ~ label #cancel {
-    margin-left: 163px;
+    right: 150px;
+    display: flex;
 }
 
 header {
@@ -72,14 +76,16 @@ header {
 }
 
 .menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     z-index: 99999999;
     height: 100vh;
     width: 200px;
     background: #e4932fec;
-    margin-left: -300px;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    right: 0;
     transition: 0.5s;
 }
 
