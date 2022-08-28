@@ -43,7 +43,7 @@ label #btn {
 }
 
 label #cancel {
-    top: 40px;
+    top: 10px;
     right: 50px;
     font-size: 25px;
     padding: 5px 10px;
@@ -70,7 +70,7 @@ label #cancel {
 }
 
 header {
-    padding: 40px 40px;
+    padding: 25px 25px;
     background: #e4932fa6;
     width: 200px;
 }
@@ -537,8 +537,31 @@ span {
 
 @media screen and (max-width:900px) {
     label #btn {
-        top: 50px;
+        top: 10px;
+        right: 10px;
     }
+
+    #check:checked ~ label #cancel {
+        right: 80px;
+    }
+
+    .menu {
+        width: 123px;
+    }
+    
+    .menu a {
+        padding: 20px 20px;
+        font-size: 15px;
+    }
+    
+    .menu a:hover {
+        padding-left: 26px;
+    }
+
+    .fa-solid,
+    .fa-brands {
+        margin-right: 4px;
+    } 
 
     .hero-1 {
         height: 70vh;
