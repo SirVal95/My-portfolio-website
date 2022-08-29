@@ -24,7 +24,7 @@ body {
 
 label #btn, label #cancel {
     position: absolute;
-    background: #9e7645a6;;
+    background: #c47b22cc;;
     color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
@@ -135,11 +135,11 @@ header {
 .hero-1 {
     background: url(./assets/images/condensation-water-drops-black-window-background-rain-droplets-with-light-reflection-dark-glass-surface-realistic-3d-vector-illustration_107791-4197.webp);
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .hero-1-cover {
     background: rgba(38, 38, 65, 0.658);
@@ -156,6 +156,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 20px;
     text-align: left;
+    margin-top: -80px;
 }
 
 .hero-1 .content {
@@ -186,6 +187,16 @@ header {
         visibility: visible;
     }
 
+}
+
+.hero-1 .bottom {
+    margin-top: 50%;
+    animation: movearrow 1s  1s  linear infinite ;
+}
+
+.hero-1 .bottom a {
+    color: #ffffff;
+    font-size: 30px;
 }
 
 .hero-1 p {
@@ -239,6 +250,7 @@ header {
     height: 70vh;
     width: 100%;
     background: radial-gradient(#43434dbe, #222225b7, #797938be);
+    background-attachment: fixed;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -532,6 +544,22 @@ span {
 .footer p {
     color: #ffffff;
     font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer .top {
+    color: #ffffff;
+    font-size: 25px;
+    animation: movearrow 1s  1s  linear infinite ;
+}
+
+@keyframes movearrow {
+    0% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -568,8 +596,9 @@ span {
         /* position: relative; */
     }
     .hero-1 .content {
-        margin-top: 80px;
+        margin-top: 50px;
     }
+
 
     .hero-1 p {
         line-height: 25px;
@@ -649,5 +678,10 @@ span {
 
     .footer .connect .social-icons {
         margin-top: 15px;
+    }
+
+    .footer .top {
+        margin-right: -80%;
+        margin-top: -60px;
     }
 }
