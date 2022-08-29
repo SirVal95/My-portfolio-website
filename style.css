@@ -136,7 +136,8 @@ header {
     background: url(./assets/images/condensation-water-drops-black-window-background-rain-droplets-with-light-reflection-dark-glass-surface-realistic-3d-vector-illustration_107791-4197.webp);
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -676,12 +677,17 @@ span {
         /* height: 100px; */
     }
 
-    .footer .connect .social-icons {
+    .footer .connect .social-icons a {
         margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .footer p {
+        font-size: 12px;
     }
 
     .footer .top {
-        margin-right: -80%;
+        margin-right: -90%;
         margin-top: -60px;
     }
 }
