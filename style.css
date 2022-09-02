@@ -12,7 +12,7 @@ body {
 }
 
 .nav {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@ label #btn {
     right: 50px;
     font-size: 25px;
     padding: 5px 10px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     position: fixed;
     z-index: 9999999;
@@ -83,7 +83,7 @@ header {
     height: 100vh;
     width: 200px;
     background: #e4932fec;
-    max-width: 1200px;
+    max-width: 1500px;
     /* margin: 0 auto; */
     right: 0;
     transition: 0.5s;
@@ -133,17 +133,18 @@ header {
 } 
 
 .hero-1 {
-    background: url(./assets/images/condensation-water-drops-black-window-background-rain-droplets-with-light-reflection-dark-glass-surface-realistic-3d-vector-illustration_107791-4197.webp);
+    background: url(assets/images/va1.webp);
+    background-position: bottom left;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .hero-1-cover {
-    background: rgba(38, 38, 65, 0.658);
+    background: rgba(21, 21, 43, 0.575);
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -248,11 +249,13 @@ header {
 }
 
 .services {
-    height: 70vh;
+    height: auto;
     width: 100%;
     background: radial-gradient(#43434dbe, #222225b7, #797938be);
+    background-size: cover;
     background-attachment: fixed;
-    max-width: 1200px;
+    padding-bottom: 50px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -288,6 +291,46 @@ span {
         visibility: visible;
     }
 }
+
+.project-samples {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-samples img {
+    height: 200px;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 5px rgba(39, 37, 37, 0.616);
+}
+
+.project-samples h5 {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.project-samples button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e4932fec;
+    transition: 0.3s ease-in-out;
+}
+
+.project-samples button:hover {
+    background: transparent;
+    border: 1.5px solid #e4932fec;
+}
+
+.project-samples button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 
 .projects {
     display: flex;
@@ -390,7 +433,7 @@ span {
     height: 100vh;
     width: 100%;
     background: #130c04bd;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -485,7 +528,7 @@ span {
     height: 100px;
     width: 100%;
     background: #e4932fea;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -638,6 +681,16 @@ span {
         flex-direction: column-reverse;
         margin: 20px 20px 0 20px;
         padding: 0 20px;
+    }
+
+    .project-samples {
+        flex-direction: column;
+        margin: 20px 20px 0 20px;
+        padding: 0 20px;
+    }
+
+    .project-samples h5 {
+        margin-bottom: 30px;
     }
 
     .projects .content {
