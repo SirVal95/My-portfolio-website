@@ -144,7 +144,7 @@ header {
 }
 
 .hero-1-cover {
-    background: rgba(21, 21, 43, 0.575);
+    background: rgba(21, 21, 43, 0.774);
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -154,11 +154,11 @@ header {
 
 .hero-1 h1 {
     text-transform: capitalize;
-    color: rgba(218, 213, 213, 0.753);
+    color: rgba(218, 213, 213, 0.918);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 20px;
     text-align: left;
-    margin-top: -80px;
+    /* margin-top: -60px; */
 }
 
 .hero-1 .content {
@@ -251,7 +251,7 @@ header {
 .services {
     height: auto;
     width: 100%;
-    background: radial-gradient(#43434dbe, #222225b7, #797938be);
+    background:  rgba(7, 7, 19, 0.904);
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 50px;
@@ -432,7 +432,7 @@ span {
 .contact {
     height: 100vh;
     width: 100%;
-    background: #130c04bd;
+    background: rgba(7, 7, 19, 0.904);
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -448,7 +448,7 @@ span {
     border-radius: 20px;
     width: 70%;
     padding: 30px;
-    background: radial-gradient(#43434dbe, #222225b7, #41411ebe);
+    background: rgba(7, 7, 19, 0.733);
 }
 
 .contact-form,
@@ -643,7 +643,9 @@ span {
         margin-top: 50px;
     }
 
-
+    .hero-1 h1 {
+        margin-top: -70px;
+    }
     .hero-1 p {
         line-height: 25px;
     }
@@ -702,6 +704,7 @@ span {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-bottom: -90px;
     }
 
 
